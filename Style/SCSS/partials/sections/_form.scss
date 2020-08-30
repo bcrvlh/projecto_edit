@@ -1,0 +1,69 @@
+.form {
+    position: relative;
+    &:before {
+        content: "";
+        background-image: url(/img/wave.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        left: 50%;
+        height: 18px;
+        position: absolute;
+        top: -93px;
+        transform: translateX(-50%);
+        width: 94px;
+    }
+    .wrapper {
+        background: $l-grey;
+        border: 1px solid $m-grey;
+        article {
+            margin: 90px auto 0;
+            max-width: 580px;
+            width: 100%;
+            &:first-of-type {
+                text-align: center;
+                h1 {
+                    color: $black;
+                    font-size: 36px;
+                    @include mq(0,400px) {
+                        font-size: 28px;
+                    }
+                }
+                h2 {
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+            }
+            label {
+                width: 100%;
+                color: $grey;
+                display: inline-block;
+                font-size: 12px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+            input {
+                border: 1px solid $m-grey;
+                display: inline-block;
+                font-size: 12px;
+                margin-bottom: 50px;
+                padding: 16px 14px;
+                width: 100%;
+            }
+            div {
+                text-align: center;
+                width: 100%;
+                input {
+                    display: inline-block;
+                    margin-right: 10px;
+                    width: auto;
+                }
+                label {
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

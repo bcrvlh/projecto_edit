@@ -1,0 +1,44 @@
+.submit {
+    .wrapper {
+        article {
+            font-size: 0;
+            text-align: center;
+            input {
+                display: inline-block;
+                &[type="text"] {
+                    border: 1px solid $black;
+                    padding: 18px;
+                    width: 475px;
+                    &:hover {
+                        border: 1px solid $theme;
+                    }
+                    &:focus {
+                        border: 1px solid $theme;
+                        color: $theme;
+                    }
+                    @include mq(500px,630px) {
+                        width: 350px;
+                    }
+                    @include mq(400px,500px) {
+                        width: 250px;
+                    }
+                    @include mq(0,400px) {
+                        width: 200px;
+                    }
+                }
+                &[type="button"] {
+                    background: $theme;
+                    color: $white;
+                    padding: 20px 36px;
+                    &:hover {
+                        background: $black;
+                    }
+                    &:active {
+                        background: $black;
+                        color: $theme;
+                    }
+                }
+            }
+        }
+    }
+}

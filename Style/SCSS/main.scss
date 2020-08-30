@@ -1,0 +1,40 @@
+//Variables
+@import 'variables/_variables.scss';
+
+//Mixins
+@import 'mixins/_mixins.scss';
+
+//Base
+@import 'base/_reset.scss';
+@import 'base/_fonts.scss';
+@import 'base/_base.scss';
+
+//Partials
+@import 'partials/sections/_add-bag.scss';
+@import 'partials/sections/_breadcrumb.scss';
+@import 'partials/sections/_cart-row.scss';
+@import 'partials/sections/_column.scss';
+@import 'partials/sections/_footer.scss';
+@import 'partials/sections/_form.scss';
+@import 'partials/sections/_grid.scss';
+@import 'partials/sections/_header.scss';
+@import 'partials/sections/_hero.scss';
+@import 'partials/sections/_heading.scss';
+@import 'partials/sections/_order-now.scss';
+@import 'partials/sections/_payment.scss';
+@import 'partials/sections/_product-description.scss';
+@import 'partials/sections/_product-more.scss';
+@import 'partials/sections/_product-row.scss';
+@import 'partials/sections/_slider.scss';
+@import 'partials/sections/_slider-title.scss';
+@import 'partials/sections/_submit.scss';
+
+@import 'partials/pages/_01.scss';
+@import 'partials/pages/_02.scss';
+@import 'partials/pages/_03.scss';
+@import 'partials/pages/_04.scss';
+@import 'partials/pages/_05.scss';
+@import 'partials/pages/_06.scss';
+@import 'partials/pages/_07.scss';
+@import 'partials/pages/_08.scss';
+@import 'partials/pages/_09.scss';

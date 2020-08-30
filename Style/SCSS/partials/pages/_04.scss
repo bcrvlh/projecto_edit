@@ -1,0 +1,10 @@
+article{
+    &[data-page="04"] {
+        section {
+            &.product-description {margin-top: 60px;}
+            &.slider-title {margin-top: 75px;}
+            &.slider {margin-top: 40px;}
+            &.product-more {margin-top: 30px;}
+        }
+    }
+}

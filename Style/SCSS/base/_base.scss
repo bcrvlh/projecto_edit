@@ -1,0 +1,78 @@
+body {
+	font-family: $font;
+}
+
+.wrapper {
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto; 
+	@include mq(0,1180px){
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.btn {
+	background: $theme;
+	color:$white; 
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font;
+	font-size:14px;
+	padding: 25px 35px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .5s ease;
+	&:hover {
+		color:$white; 
+		background: $grey;
+	}
+	&:active{
+		background: $theme;
+		box-shadow: inset 2px 2px 5px 0px $grey;
+	}
+	@include mq(0,800px){
+		padding: 15px 25px;
+	}
+}
+
+a {
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	text-decoration: none;
+	transition: $tregular;
+	&:hover {
+		color: $theme;
+	}
+	&:before {
+		transition: $tregular;
+	}
+	&:after {
+		transition: $tregular;
+	}
+}
+
+input {
+	border: none;
+	padding: 0;
+	margin: 0;
+	transition: $tregular;
+}
+
+select {
+	appearance: none;
+	border-radius: 0;
+	border: 1px solid $m-grey;
+	color: $grey;
+	display: inline-block;
+	font-size: 12px;
+	margin-bottom: 50px;
+	padding: 16px 14px;
+	width: 100%;
+	background-image: url(/img/drop-down.png);
+	background-size: 11px auto;
+	background-repeat: no-repeat;
+	background-position: right 14px center;
+}

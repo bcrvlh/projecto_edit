@@ -1,0 +1,162 @@
+.cart-row {
+    .wrapper {
+        article {
+            ul {
+                align-items: center;
+                border-bottom: 1px solid $m-grey;
+                display: grid;
+                grid-column-gap: 20px;
+                grid-template-columns: repeat(10,[col] 1fr);
+                padding: 18px 10px;
+                width: 100%;
+                @include mq(0px,800px) {
+                    grid-template-columns: repeat(5,[col] 1fr);
+                }
+                li {
+                    display: inline-block;
+                    position: relative;
+                    @include mq(0px,800px) {
+                        margin-bottom: 25px;
+                    }
+                    &:nth-of-type(1) {@include mq(0px,800px) {grid-column: span 5;}}
+                    &:nth-of-type(2) {
+                        grid-column: span 4;
+                        @include mq(0px,800px) {
+                            grid-column: span 5;
+                        }
+                    }
+                    &:nth-of-type(3) {@include mq(0px,800px) {grid-column: span 1;}}
+                    &:nth-of-type(4) {@include mq(0px,800px) {grid-column: span 1;}}
+                    &:nth-of-type(5) {@include mq(0px,800px) {grid-column: span 1;}}
+                    &:nth-of-type(6) {@include mq(0px,800px) {grid-column: span 1;}}
+                    &:nth-of-type(7) {@include mq(0px,800px) {grid-column: span 1;}}
+                    img {
+                        border: 1px solid $m-grey;
+                        width: 100%;
+                    }
+                    p {
+                        color: $black;
+                        display: inline-block;
+                        font-size: 14px;
+                        b {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: $bold;
+                            margin-bottom: 8px;
+                        }
+                        i {
+                            color: $grey;
+                            font-size: 12px;
+                            font-style: italic;
+                        }
+                    }
+                    svg {
+                        cursor: pointer;
+                        fill: $black;
+                        height: 10px;
+                        width: 10px;
+                    }
+                    ul {
+                        border-bottom: none;
+                        display: inline-block;
+                        margin-left: 8px;
+                        padding: 0;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: auto;
+                        li {
+                            display: block;
+                            @include mq(0px,800px) {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                cursor: pointer;
+                                background: $black;
+                                height: 12px;
+                                position: relative;
+                                width: 12px;
+                                &:hover {
+                                    background: $theme;
+                                }
+                                &:active {
+                                    background: $grey;
+                                }
+                                &.more {
+                                    margin-bottom: 4px;
+                                    &:after {
+                                        color: $white;
+                                        content: "+";
+                                        display: block;
+                                        font-size: 12px;
+                                        left: 50%;
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+                                &.less {
+                                    &:after {
+                                        color: $white;
+                                        content: "-";
+                                        display: block;
+                                        font-size: 12px;
+                                        left: 50%;
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.label {
+                    @include mq(0px,800px) {
+                        display: none;
+                    }
+                    li {
+                        p {
+                            color: $grey;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                &#subtotal {
+                    background: $l-grey;
+                    margin-top: 4px;
+                    border-bottom: none;
+                    li {
+                        &:nth-of-type(1) {
+                            grid-column: span 8;
+                            text-align: right;
+                            @include mq(0px,800px) {
+                                grid-column: span 1;
+                                margin-bottom: 0px;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            grid-column: span 2;
+                            @include mq(0px,800px) {
+                                grid-column: span 1;
+                                margin-bottom: 0px;
+                            }
+                        }
+                        p {
+                            color: $theme;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            b {
+                                color: $black;
+                                font-weight: $bold;
+                                margin-bottom: 0;
+                                text-transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.product-description {
+    .wrapper {
+        article {
+            font-size: 0;
+            margin: auto;
+            max-width: 50%;
+            text-align: center;
+            @include mq(0,600px) {
+                max-width: 100%;
+            }
+            h1 {
+                color: $black;
+                font-size: 36px;
+                @include mq(0,400px) {
+                    font-size: 28px;
+                }
+            }
+            h2 {
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            h3 {
+                font-size: 18px;
+                font-style: italic;
+                margin-top: 20px;
+            }
+            h4 {
+                color: $grey;
+                font-size: 14px;
+                margin-top: 40px;
+                text-transform: uppercase;
+            }
+            p {
+                color: $grey;
+                font-size: 14px;
+                margin-top: 30px;
+            }
+            ul {
+                margin-top: 20px;
+                li {
+                    display: inline-block;
+                    &:not(:last-of-type) {
+                        margin-right: 15px;
+                    }
+                    input {
+                        &[type="button"] {
+                            background: none;
+                            border: 1px solid $black;
+                            color: $black;
+                            height: 32px;
+                            margin-top: 0px;
+                            padding: 0;
+                            width: 32px;
+                            &:hover {
+                                background: $theme;
+                            }
+                            &:active {
+                                background: $black;
+                                color: $white;
+                            }
+                            &.selected {
+                                background: $black;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn {
+                margin-top: 50px; 
+                padding: 20px 46px;
+            }
+        }
+    }
+}

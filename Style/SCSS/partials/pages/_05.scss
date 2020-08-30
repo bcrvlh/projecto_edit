@@ -1,0 +1,10 @@
+article {
+    &[data-page="05"] {
+        section {
+            &.heading {margin-top: 220px;}
+            &.cart-row {margin-top: 90px;}
+            &.form {margin-top: 170px;}
+            &.payment {margin-top: 170px;}
+        }
+    }
+}

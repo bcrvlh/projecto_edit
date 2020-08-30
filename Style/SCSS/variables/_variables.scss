@@ -1,0 +1,25 @@
+// Fonts
+$font: 'Lato', sans-serif;
+$copy-font:'Georgia', serif;
+
+//Font Weight
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+//Line Heigh
+$line: 120%;
+$copy-line: 160%;
+
+// Colours
+$black: #000;
+$grey: #606060;
+$m-grey: rgba($grey, 0.25);
+$l-grey: rgba($grey, 0.05);
+$white: #FFF;
+$theme: #8a9bcf;
+
+// Transitions
+$tfast: all .2s ease;
+$tregular: all .5s ease;
+$tslow: all 1s ease;
